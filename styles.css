@@ -261,6 +261,17 @@ h1 {
 
 .principle-grid article {
   padding: 0;
+  border-top: 2px solid var(--ink);
+  padding-top: 20px;
+}
+
+.principle-num {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
 }
 
 .principle-grid h3 {
