@@ -1,2 +1,5 @@
 .DS_Store
 Thumbs.db
+.gstack/
+node_modules/
+dist/

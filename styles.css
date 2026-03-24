@@ -1,11 +1,11 @@
 :root {
   --bg: #fafafa;
-  --surface: #fff;
-  --ink: #111;
-  --muted: #666;
-  --line: #e2e2e2;
+  --surface: #ffffff;
+  --ink: #3D2B2E;
+  --muted: #8C7478;
+  --line: #F0DEE0;
   --pop: #E8788A;
-  --radius: 8px;
+  --radius: 12px;
   --max: 960px;
 }
 
@@ -16,7 +16,7 @@ body {
   min-height: 100vh;
   color: var(--ink);
   background: var(--bg);
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: 'Nunito', 'Inter', system-ui, -apple-system, sans-serif;
   font-size: 16px;
   line-height: 1.6;
   overflow-x: hidden;
