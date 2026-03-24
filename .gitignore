@@ -1,5 +1,14 @@
+# OS
 .DS_Store
 Thumbs.db
-.gstack/
+
+# Dependencies
 node_modules/
+
+# Build output
 dist/
+
+# Tools
+.gstack/
+.claude/
+.playwright-mcp/
