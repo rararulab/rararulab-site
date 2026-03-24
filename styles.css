@@ -200,12 +200,36 @@ h1 {
   border-radius: var(--radius-md);
   background: var(--surface);
   box-shadow: var(--shadow);
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
   transition: border-color 180ms ease, transform 180ms ease;
 }
 
 .product-card:hover {
   border-color: var(--ink);
   transform: translateY(-2px);
+}
+
+.product-mono {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  background: var(--ink);
+  color: #fff;
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -0.02em;
+}
+
+.product-body {
+  flex: 1;
+  min-width: 0;
 }
 
 .tag {
