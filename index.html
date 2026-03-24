@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>RararuLab | Build Productive AI Systems</title>
+    <title>RararuLab</title>
     <meta
       name="description"
       content="RararuLab builds developer-grade AI products. Explore Rara and upcoming products from the lab."
@@ -13,115 +13,85 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="bg-blur bg-a" aria-hidden="true"></div>
-    <div class="bg-blur bg-b" aria-hidden="true"></div>
-
     <header class="topbar">
-      <a class="brand" href="./">RararuLab</a>
+      <a class="brand" href="./">
+        <span class="brand-icon" aria-hidden="true"></span>
+        RararuLab
+      </a>
       <nav aria-label="Primary navigation">
         <a href="#products">Products</a>
-        <a href="#principles">Principles</a>
-        <a href="#contact">Contact</a>
+        <a href="https://github.com/rararulab">GitHub</a>
       </nav>
     </header>
 
     <main>
-      <section class="hero reveal">
-        <p class="eyebrow">Independent product lab for AI-native workflows</p>
-        <h1>We build focused tools that help technical teams move faster.</h1>
-        <p class="lead">
-          RararuLab ships practical AI products with strong engineering foundations. Start with one product,
-          then connect the stack as your workflow matures.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="https://github.com/rararulab">Explore GitHub</a>
-          <a class="btn btn-secondary" href="#products">See products</a>
-        </div>
+      <section class="hero fade-in">
+        <h1>Productive AI Systems</h1>
+        <p class="lead">Focused tools for technical teams.</p>
+        <a class="btn btn-primary" href="https://github.com/rararulab">Explore GitHub</a>
       </section>
 
       <section id="products" class="section reveal">
-        <div class="section-heading">
-          <h2>Product portfolio</h2>
-          <p>Each product solves a concrete workflow problem. Together they form an extensible AI toolchain.</p>
-        </div>
-        <div class="product-grid" role="list">
-          <article class="product-card" role="listitem">
-            <div class="product-mono">R</div>
-            <div class="product-body">
-              <p class="tag">Active</p>
+        <h2>Products</h2>
+        <div class="product-grid">
+          <a class="product-card" href="https://github.com/rararulab/rara">
+            <div class="product-head">
+              <span class="product-badge">R</span>
               <h3>Rara</h3>
-              <p>Developer agent with tape memory, tool orchestration, and multi-channel interfaces.</p>
-              <a href="https://github.com/rararulab/rara">GitHub</a>
             </div>
-          </article>
-          <article class="product-card" role="listitem">
-            <div class="product-mono">RT</div>
-            <div class="product-body">
-              <p class="tag">Active</p>
+            <p>Tape memory, tool orchestration, multi-channel agent.</p>
+          </a>
+          <a class="product-card" href="https://github.com/rararulab/rara-trading">
+            <div class="product-head">
+              <span class="product-badge">RT</span>
               <h3>Rara Trading</h3>
-              <p>Strategy tooling and execution infrastructure for systematic market operations.</p>
-              <a href="https://github.com/rararulab/rara-trading">GitHub</a>
             </div>
-          </article>
-          <article class="product-card" role="listitem">
-            <div class="product-mono">T</div>
-            <div class="product-body">
-              <p class="tag">Active</p>
+            <p>Systematic strategy execution infrastructure.</p>
+          </a>
+          <a class="product-card" href="https://github.com/rararulab/tenki">
+            <div class="product-head">
+              <span class="product-badge">T</span>
               <h3>Tenki</h3>
-              <p>Service tooling for production-grade reliability patterns under rapid iteration.</p>
-              <a href="https://github.com/rararulab/tenki">GitHub</a>
             </div>
-          </article>
-          <article class="product-card" role="listitem">
-            <div class="product-mono">K</div>
-            <div class="product-body">
-              <p class="tag">Active</p>
+            <p>Production-grade service reliability tooling.</p>
+          </a>
+          <a class="product-card" href="https://github.com/rararulab/kotoba">
+            <div class="product-head">
+              <span class="product-badge">K</span>
               <h3>Kotoba</h3>
-              <p>Language tools and agent experiments for pragmatic developer workflows.</p>
-              <a href="https://github.com/rararulab/kotoba">GitHub</a>
             </div>
-          </article>
+            <p>Language tools for developer workflows.</p>
+          </a>
         </div>
       </section>
 
-      <section id="principles" class="section principles reveal">
-        <div class="section-heading">
-          <h2>How we build</h2>
-        </div>
-        <div class="principle-grid">
-          <article>
-            <span class="principle-num">01</span>
+      <section id="principles" class="section reveal">
+        <h2>Principles</h2>
+        <div class="principle-list">
+          <div class="principle">
             <h3>Production over demo</h3>
-            <p>Every system is designed for real operational constraints, not only one-off showcase scenarios.</p>
-          </article>
-          <article>
-            <span class="principle-num">02</span>
-            <h3>Composable architecture</h3>
-            <p>Products can work alone, but share interfaces and patterns so they can integrate when needed.</p>
-          </article>
-          <article>
-            <span class="principle-num">03</span>
+            <span class="principle-dash"></span>
+          </div>
+          <div class="principle">
+            <h3>Composable by default</h3>
+            <span class="principle-dash"></span>
+          </div>
+          <div class="principle">
             <h3>Fast iteration loop</h3>
-            <p>Small, testable increments with direct feedback from actual usage and code-level observability.</p>
-          </article>
+            <span class="principle-dash"></span>
+          </div>
         </div>
-      </section>
-
-      <section id="contact" class="section cta reveal">
-        <h2>Looking to collaborate or adopt a product?</h2>
-        <p>Open an issue in the relevant repository, or start from the lab profile for the latest projects.</p>
-        <a class="btn btn-primary" href="https://github.com/rararulab">Go to RararuLab on GitHub</a>
       </section>
     </main>
 
     <footer>
-      <p>RararuLab</p>
+      <span>RararuLab</span>
       <a href="https://github.com/rararulab">GitHub</a>
     </footer>
 
