@@ -8,12 +8,12 @@
       name="description"
       content="RararuLab builds developer-grade AI products. Explore Rara and upcoming products from the lab."
     />
-    <meta name="theme-color" content="#fafafa" />
+    <meta name="theme-color" content="#F6F2EF" />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
@@ -21,7 +21,7 @@
   <body>
     <header class="topbar">
       <a class="brand" href="./">
-        <span class="brand-icon" aria-hidden="true"></span>
+        <img class="brand-icon" src="./favicon.svg" alt="" width="20" height="20">
         RararuLab
       </a>
       <nav aria-label="Primary navigation">
@@ -31,67 +31,64 @@
     </header>
 
     <main>
-      <section class="hero fade-in">
-        <h1>Productive AI Systems</h1>
-        <p class="lead">Focused tools for technical teams.</p>
-        <a class="btn btn-primary" href="https://github.com/rararulab">Explore GitHub</a>
+      <section class="hero">
+        <p class="hero-label reveal" style="--d:0">The Lab</p>
+        <h1 class="reveal" style="--d:1">Productive<br><em>AI Systems</em></h1>
+        <p class="lead reveal" style="--d:2">Focused tools for technical teams.</p>
+        <a class="btn btn-primary reveal" style="--d:3" href="https://github.com/rararulab">Explore GitHub</a>
       </section>
 
-      <section id="products" class="section reveal">
-        <h2>Products</h2>
+      <section id="products" class="section">
+        <h2 class="reveal">Products</h2>
         <div class="product-grid">
-          <a class="product-card" href="https://github.com/rararulab/rara">
-            <div class="product-head">
-              <img class="product-icon" src="./assets/icons/rara.svg" alt="Rara" width="32" height="32">
-              <h3>Rara</h3>
-            </div>
+          <a class="product-card reveal" style="--d:0" href="https://github.com/rararulab/rara">
+            <span class="product-num">01</span>
+            <img class="product-icon" src="/assets/icons/rara.svg" alt="" width="36" height="36">
+            <h3>Rara</h3>
             <p>Tape memory, tool orchestration, multi-channel agent.</p>
           </a>
-          <a class="product-card" href="https://github.com/rararulab/rara-trading">
-            <div class="product-head">
-              <img class="product-icon" src="./assets/icons/rara-trading.svg" alt="Rara Trading" width="32" height="32">
-              <h3>Rara Trading</h3>
-            </div>
+          <a class="product-card reveal" style="--d:1" href="https://github.com/rararulab/rara-trading">
+            <span class="product-num">02</span>
+            <img class="product-icon" src="/assets/icons/rara-trading.svg" alt="" width="36" height="36">
+            <h3>Rara Trading</h3>
             <p>Systematic strategy execution infrastructure.</p>
           </a>
-          <a class="product-card" href="https://github.com/rararulab/tenki">
-            <div class="product-head">
-              <img class="product-icon" src="./assets/icons/tenki.svg" alt="Tenki" width="32" height="32">
-              <h3>Tenki</h3>
-            </div>
+          <a class="product-card reveal" style="--d:2" href="https://github.com/rararulab/tenki">
+            <span class="product-num">03</span>
+            <img class="product-icon" src="/assets/icons/tenki.svg" alt="" width="36" height="36">
+            <h3>Tenki</h3>
             <p>Production-grade service reliability tooling.</p>
           </a>
-          <a class="product-card" href="https://github.com/rararulab/kotoba">
-            <div class="product-head">
-              <img class="product-icon" src="./assets/icons/kotoba.svg" alt="Kotoba" width="32" height="32">
-              <h3>Kotoba</h3>
-            </div>
+          <a class="product-card reveal" style="--d:3" href="https://github.com/rararulab/kotoba">
+            <span class="product-num">04</span>
+            <img class="product-icon" src="/assets/icons/kotoba.svg" alt="" width="36" height="36">
+            <h3>Kotoba</h3>
             <p>Language tools for developer workflows.</p>
           </a>
         </div>
       </section>
 
-      <section id="principles" class="section reveal">
-        <h2>Principles</h2>
+      <section id="principles" class="section">
+        <h2 class="reveal">Principles</h2>
         <div class="principle-list">
-          <div class="principle">
+          <div class="principle reveal" style="--d:0">
+            <span class="principle-num">I</span>
             <h3>Production over demo</h3>
-            <span class="principle-dash"></span>
           </div>
-          <div class="principle">
+          <div class="principle reveal" style="--d:1">
+            <span class="principle-num">II</span>
             <h3>Composable by default</h3>
-            <span class="principle-dash"></span>
           </div>
-          <div class="principle">
+          <div class="principle reveal" style="--d:2">
+            <span class="principle-num">III</span>
             <h3>Fast iteration loop</h3>
-            <span class="principle-dash"></span>
           </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <span>RararuLab</span>
+      <span>&copy; RararuLab</span>
       <a href="https://github.com/rararulab">GitHub</a>
     </footer>
 
