@@ -6,90 +6,177 @@
     <title>RararuLab</title>
     <meta
       name="description"
-      content="RararuLab — Rust-native CLIs and AI agents. Open-source tools built to ship, not to demo."
+      content="RararuLab builds Rust-native CLIs and AI agents that ship fast and stay useful."
     />
-    <meta name="theme-color" content="#F6F2EF" />
+    <meta name="theme-color" content="#10161D" />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="topbar">
-      <a class="brand" href="./">
-        <img class="brand-icon" src="./favicon.svg" alt="" width="20" height="20">
-        RararuLab
-      </a>
-      <nav aria-label="Primary navigation">
-        <a href="#products">Products</a>
-        <a href="https://github.com/rararulab">GitHub</a>
-      </nav>
+    <div class="ambient" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="./">
+          <img class="brand-icon" src="./favicon.svg" alt="" width="22" height="22" />
+          RararuLab
+        </a>
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="#products">Products</a>
+          <a href="#process">Build Loop</a>
+          <a href="https://github.com/rararulab">GitHub</a>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <section class="hero">
-        <p class="hero-label reveal" style="--d:0">Open Source</p>
-        <h1 class="reveal" style="--d:1">Tools That Think<br><em>Alongside You</em></h1>
-        <p class="lead reveal" style="--d:2">Rust-native CLIs and AI agents — built to ship, not to demo.</p>
-        <a class="btn btn-primary reveal" style="--d:3" href="https://github.com/rararulab">View on GitHub</a>
+      <section class="hero shell">
+        <p class="kicker reveal" style="--d:0">Independent Product Lab</p>
+        <h1 class="reveal" style="--d:1">
+          We turn rough ideas into
+          <span>shipping Rust tools.</span>
+        </h1>
+        <p class="hero-copy reveal" style="--d:2">
+          RararuLab builds terminal-first software and AI agents with one goal: useful in real work,
+          not just impressive in demos.
+        </p>
+        <div class="hero-actions reveal" style="--d:3">
+          <a class="btn btn-primary" href="https://github.com/rararulab">Explore Repositories</a>
+          <a class="btn btn-ghost" href="#products">See Products</a>
+        </div>
+        <ul class="hero-stats reveal" style="--d:4" aria-label="Lab highlights">
+          <li>
+            <strong>4</strong>
+            <span>live OSS projects</span>
+          </li>
+          <li>
+            <strong>Rust + AI</strong>
+            <span>single stack mindset</span>
+          </li>
+          <li>
+            <strong>CLI first</strong>
+            <span>automation-ready output</span>
+          </li>
+        </ul>
+        <ul class="capability-strip reveal" style="--d:5" aria-label="Core capabilities">
+          <li>Rust Systems Engineering</li>
+          <li>Agent Workflows</li>
+          <li>Terminal UX</li>
+          <li>Automation-First Design</li>
+        </ul>
       </section>
 
-      <section id="products" class="section">
-        <h2 class="reveal">Products</h2>
+      <section id="products" class="section shell">
+        <div class="section-head reveal">
+          <p class="section-label">Flagship Products</p>
+          <h2>Small surface, high leverage.</h2>
+        </div>
+
         <div class="product-grid">
           <a class="product-card reveal" style="--d:0" href="https://github.com/rararulab/rara">
             <span class="product-num">01</span>
-            <img class="product-icon" src="/assets/icons/rara.svg" alt="" width="36" height="36">
+            <img class="product-icon" src="/assets/icons/rara.svg" alt="" width="38" height="38" />
             <h3>Rara</h3>
-            <p>Proactive AI agent with tape memory. Monitors context, takes action — via Telegram, web, or terminal.</p>
+            <p>Proactive AI agent with tape memory, ready for terminal, web, and chat operations.</p>
+            <div class="product-meta">
+              <span>Agent Ops</span>
+              <span>View Repo -></span>
+            </div>
           </a>
+
           <a class="product-card reveal" style="--d:1" href="https://github.com/rararulab/rara-trading">
             <span class="product-num">02</span>
-            <img class="product-icon" src="/assets/icons/rara-trading.svg" alt="" width="36" height="36">
+            <img class="product-icon" src="/assets/icons/rara-trading.svg" alt="" width="38" height="38" />
             <h3>Rara Trading</h3>
-            <p>Closed-loop trading system. Research, execute, and learn — agents that refine their own strategies.</p>
+            <p>Closed-loop trading workflow that researches, executes, and continuously adapts.</p>
+            <div class="product-meta">
+              <span>Research + Execution</span>
+              <span>View Repo -></span>
+            </div>
           </a>
+
           <a class="product-card reveal" style="--d:2" href="https://github.com/rararulab/tenki">
             <span class="product-num">03</span>
-            <img class="product-icon" src="/assets/icons/tenki.svg" alt="" width="36" height="36">
+            <img class="product-icon" src="/assets/icons/tenki.svg" alt="" width="38" height="38" />
             <h3>Tenki</h3>
-            <p>Job search on rails. Track applications, auto-score fit, tailor resumes — all from the command line.</p>
+            <p>CLI workflow for job search with fit scoring, application tracking, and resume tailoring.</p>
+            <div class="product-meta">
+              <span>Career Workflow</span>
+              <span>View Repo -></span>
+            </div>
           </a>
+
           <a class="product-card reveal" style="--d:3" href="https://github.com/rararulab/kotoba">
             <span class="product-num">04</span>
-            <img class="product-icon" src="/assets/icons/kotoba.svg" alt="" width="36" height="36">
+            <img class="product-icon" src="/assets/icons/kotoba.svg" alt="" width="38" height="38" />
             <h3>Kotoba</h3>
-            <p>Japanese, the hard way. SRS review, native TTS, and voice training — in your terminal.</p>
+            <p>Terminal-native Japanese learning with SRS review, TTS listening, and voice training.</p>
+            <div class="product-meta">
+              <span>Language Training</span>
+              <span>View Repo -></span>
+            </div>
           </a>
         </div>
       </section>
 
-      <section id="principles" class="section">
-        <h2 class="reveal">Principles</h2>
-        <div class="principle-list">
-          <div class="principle reveal" style="--d:0">
-            <span class="principle-num">I</span>
-            <h3>Ship, then polish</h3>
-          </div>
-          <div class="principle reveal" style="--d:1">
-            <span class="principle-num">II</span>
-            <h3>Composable by default</h3>
-          </div>
-          <div class="principle reveal" style="--d:2">
-            <span class="principle-num">III</span>
-            <h3>Tight feedback loops</h3>
-          </div>
+      <section id="process" class="section shell">
+        <div class="section-head reveal">
+          <p class="section-label">Build Loop</p>
+          <h2>How a concept becomes a product.</h2>
+        </div>
+
+        <div class="loop-grid">
+          <article class="loop-step reveal" style="--d:0">
+            <span class="loop-index">I</span>
+            <h3>Map the friction</h3>
+            <p>Start from repetitive work that can be automated with a clear command boundary.</p>
+          </article>
+
+          <article class="loop-step reveal" style="--d:1">
+            <span class="loop-index">II</span>
+            <h3>Ship the narrow core</h3>
+            <p>Release a small, usable path first, then expand only where usage pressure is real.</p>
+          </article>
+
+          <article class="loop-step reveal" style="--d:2">
+            <span class="loop-index">III</span>
+            <h3>Tighten feedback cycles</h3>
+            <p>Use issues and telemetry to fold lessons back into faster and safer iterations.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section shell proof">
+        <div class="proof-card reveal" style="--d:0">
+          <p class="proof-label">Why teams watch this lab</p>
+          <h2>Practical by default.</h2>
+          <ul>
+            <li>Every tool is open-source and inspectable.</li>
+            <li>Interface design starts in the terminal, then fans out.</li>
+            <li>Agent behavior is grounded in reproducible workflows.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section shell cta">
+        <h2 class="reveal" style="--d:0">If it can be automated, we want it shippable.</h2>
+        <p class="reveal" style="--d:1">Browse the code, open an issue, or fork a tool into your own stack.</p>
+        <div class="hero-actions reveal" style="--d:2">
+          <a class="btn btn-primary" href="https://github.com/rararulab">Visit GitHub</a>
+          <a class="btn btn-ghost" href="https://github.com/rararulab?tab=repositories">All Repositories</a>
         </div>
       </section>
     </main>
 
-    <footer>
-      <span>&copy; RararuLab</span>
-      <a href="https://github.com/rararulab">GitHub</a>
+    <footer class="shell site-footer">
+      <span>© <span data-year></span> RararuLab</span>
+      <a href="https://github.com/rararulab">github.com/rararulab</a>
     </footer>
 
     <script type="module" src="./src/main.ts"></script>

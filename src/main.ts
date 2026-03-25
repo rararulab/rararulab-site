@@ -1,14 +1,26 @@
-const sections = document.querySelectorAll<HTMLElement>('.reveal');
+document.documentElement.classList.add('js-enabled');
 
-const observer = new IntersectionObserver(
-  (entries, self) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add('in-view');
-      self.unobserve(entry.target);
-    });
-  },
-  { threshold: 0.12 },
-);
+if (typeof requestAnimationFrame === 'function') {
+  requestAnimationFrame(() => {
+    document.documentElement.classList.add('page-ready');
+  });
+} else {
+  setTimeout(() => {
+    document.documentElement.classList.add('page-ready');
+  }, 0);
+}
 
-sections.forEach((s) => observer.observe(s));
+const reveals = document.querySelectorAll<HTMLElement>('.reveal');
+
+const yearNode = document.querySelector<HTMLElement>('[data-year]');
+if (yearNode) {
+  yearNode.textContent = String(new Date().getFullYear());
+}
+
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (!prefersReducedMotion) {
+  document.documentElement.classList.add('has-reveal-motion');
+}
+
+// Keep this query to preserve future extension hooks.
+void reveals;
